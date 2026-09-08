@@ -1,0 +1,12 @@
+body{
+    /*
+   background-image: url(./assets/bg-mobile.jpg) /* background serve para colocar a localização da imagem, em qual pasta está para colocar de fundo ou numa parte do projeto 
+   background-repeat:no-repeat ; /* esse background serve para quando uma imagem repete varias vezes e você quer ajustar para que não fique repetindo varias vezes 
+   background-position: top center; /* já esse, posicionar a imagem quando ela não está na posição que deseja 
+   background-size: cover ; /* esse vai cobrir todo o espaço em branco e vai seguir o tamanho do dispositivo que o site estiver sendo visualizado  
+   */
+    /* tem como agrupar todo esse codigo num lugar só */
+
+    /* essa propriedade tem o nome de short - end */
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}

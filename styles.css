@@ -10,3 +10,22 @@ body{
     /* essa propriedade tem o nome de short - end */
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
+
+#container{
+    width: 360px;
+    border: 1px solid red; /* border poder ter até tres propriedades */
+    margin: auto ; /* serve para alinhar as div ao meio */
+    
+}
+
+#profile{
+    text-align: center;
+}
+
+#profile img{
+    width: 112px;
+    /*height: ;  a altura normalmenre segue a altura da pag */
+    margin: auto;
+    /* display é a visualização do conteudo na tela */
+
+}

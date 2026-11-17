@@ -36,6 +36,7 @@ body{
 
     /* essa propriedade tem o nome de short - end */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh /* aqui vai ocupar todo o espaço vazio */ ;
 }
 
 body * { /* o * é o seletor universal, ou seja, tudo o que estiver aqui, vai para o codigo todo */
@@ -188,5 +189,18 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+
+}
+
+/* media queries, só funciona se tiver a linha no html de meta de viewport */
+
+@media(min-width:700px){
+        :root{
+           --bg-url: url(./assets/bg-desktop.jpg);
+        }
+
+        .light{
+            --bg-url: url(./assets/bg-desktop-light.jpg);
+        }
 
 }

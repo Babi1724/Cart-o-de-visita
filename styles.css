@@ -44,7 +44,8 @@ body * { /* o * é o seletor universal, ou seja, tudo o que estiver aqui, vai pa
 }
 
 #container{
-    width: 360px;
+    width: 100%;
+    max-width: 588px; /* a max- witdh dá uma largura maxima de até onde o projeto pode chegar no dispositivo */
     border: 1px solid red; /* border poder ter até tres propriedades */
     /*margin: auto ; serve para alinhar as div ao meio */
     margin: 56px auto 0px;

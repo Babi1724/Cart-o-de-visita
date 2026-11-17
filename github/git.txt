@@ -1,0 +1,4 @@
+github é uma plataforma online onde voce insere seus projetos para acessar de forma online de qualquer lugar
+
+já o git ele é um meio para ser introduzido algumas modificações no projeto ou para mandar as alterações para a nuvem do github.
+

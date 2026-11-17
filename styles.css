@@ -97,11 +97,16 @@ body * { /* o * é o seletor universal, ou seja, tudo o que estiver aqui, vai pa
     left: 0;
     z-index: 1; /* já o z-index é tipo mudar o andar, ou seja se um elemento está atras da camada, ele vem pra frente */
     transform: translateY(-50%); /* movimenta para cima ou para baixo */
+    animation: slide-back 0.2s;
 }
 
 .light #switch button{
-    right: 0;
-    left: initial; /* ele volta a sua maneira inicial */
+    animation: slide-in 0.4s forwards /* o forwards mantem a regra definida la na animation, não voltando para o lugar inicial */;
+    /* left: initial; ele volta a sua maneira inicial */
+}
+
+#switch button:hover{
+    outline: 7px solid var(--highlight-color); /* o outline serve para dar uma sombra para o botão que você criou. */ 
 }
 
 #switch span{
@@ -203,4 +208,27 @@ footer{
             --bg-url: url(./assets/bg-desktop-light.jpg);
         }
 
+}
+
+/* animation */
+
+@keyframes slide-in{
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 50%;
+
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left:50%;
+    }
+
+    to{
+        left:0%;
+    }
 }
